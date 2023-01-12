@@ -1,7 +1,7 @@
 *** Settings ***
 Resource    konia_resources.robot
 Test Setup    Abrir o navegador
-#Test Teardown    Fechar o navegador
+# Test Teardown    Fechar o navegador
 
 *** Test Cases ***
 Caso de Teste 01 - Acesso ao menu "Quem Somos"
