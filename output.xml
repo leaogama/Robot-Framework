@@ -1,101 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.11.1 on win32)" generated="20230112 17:07:19.899" rpa="false" schemaversion="3">
+<robot generator="Robot 6.0.2 (Python 3.11.1 on win32)" generated="20230112 17:11:57.367" rpa="false" schemaversion="3">
 <suite id="s1" name="Konia Testes" source="C:\_git\Robot-Framework\konia_testes.robot">
 <test id="s1-t1" name="Caso de Teste 01 - Acesso ao menu &quot;Quem Somos&quot;" line="7">
 <kw name="Abrir o navegador" library="konia_resources" type="SETUP">
 <kw name="Open Browser" library="SeleniumLibrary">
-<arg>browser=edge</arg>
+<arg>browser=chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230112 17:07:20.137" level="INFO">Opening browser 'edge' to base url 'None'.</msg>
-<status status="PASS" starttime="20230112 17:07:20.137" endtime="20230112 17:07:22.827"/>
+<msg timestamp="20230112 17:11:57.602" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20230112 17:11:57.602" endtime="20230112 17:11:59.076"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230112 17:07:22.827" endtime="20230112 17:07:22.950"/>
+<status status="PASS" starttime="20230112 17:11:59.077" endtime="20230112 17:11:59.201"/>
 </kw>
-<status status="PASS" starttime="20230112 17:07:20.136" endtime="20230112 17:07:22.950"/>
+<status status="PASS" starttime="20230112 17:11:57.602" endtime="20230112 17:11:59.201"/>
 </kw>
 <kw name="Dado que o usuário esteja na página home page da Konia.com.br" library="konia_resources">
 <kw name="Go To" library="SeleniumLibrary">
-<arg>url={URL}</arg>
+<arg>url=${URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20230112 17:07:22.951" level="INFO">Opening url '{URL}'</msg>
-<msg timestamp="20230112 17:07:23.096" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20230112 17:07:23.096" level="FAIL">InvalidArgumentException: Message: invalid argument
-  (Session info: MicrosoftEdge=108.0.1462.76)
-Stacktrace:
-Backtrace:
-	Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF772829042+14306]
-	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7727B0802+842914]
-	(No symbol) [0x00007FF772461BF3]
-	(No symbol) [0x00007FF77244DCBA]
-	(No symbol) [0x00007FF77244C14D]
-	(No symbol) [0x00007FF77244C34A]
-	(No symbol) [0x00007FF772463E12]
-	(No symbol) [0x00007FF7724E03BD]
-	(No symbol) [0x00007FF7724C5D2A]
-	(No symbol) [0x00007FF77249836E]
-	(No symbol) [0x00007FF7724DF70C]
-	(No symbol) [0x00007FF7724C5B03]
-	(No symbol) [0x00007FF7724973B8]
-	(No symbol) [0x00007FF77249638E]
-	(No symbol) [0x00007FF772497AE4]
-	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7726FFC58+119032]
-	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7726ED316+42934]
-	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7726F052C+55756]
-	(No symbol) [0x00007FF772567923]
-	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7727B82BA+874330]
-	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7727BD3B4+895060]
-	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7727BD50C+895404]
-	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7727C662E+932558]
-	BaseThreadInitThunk [0x00007FFB9ED27614+20]
-	RtlUserThreadStart [0x00007FFBA06026A1+33]
-</msg>
-<status status="FAIL" starttime="20230112 17:07:22.951" endtime="20230112 17:07:23.099"/>
+<msg timestamp="20230112 17:11:59.203" level="INFO">Opening url 'https://konia.com.br'</msg>
+<status status="PASS" starttime="20230112 17:11:59.202" endtime="20230112 17:12:01.097"/>
 </kw>
-<status status="FAIL" starttime="20230112 17:07:22.951" endtime="20230112 17:07:23.099"/>
+<status status="PASS" starttime="20230112 17:11:59.202" endtime="20230112 17:12:01.097"/>
 </kw>
-<status status="FAIL" starttime="20230112 17:07:20.136" endtime="20230112 17:07:23.100">InvalidArgumentException: Message: invalid argument
-  (Session info: MicrosoftEdge=108.0.1462.76)
-Stacktrace:
-Backtrace:
-	Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF772829042+14306]
-	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7727B0802+842914]
-	(No symbol) [0x00007FF772461BF3]
-	(No symbol) [0x00007FF77244DCBA]
-	(No symbol) [0x00007FF77244C14D]
-	(No symbol) [0x00007FF77244C34A]
-	(No symbol) [0x00007FF772463E12]
-	(No symbol) [0x00007FF7724E03BD]
-	(No symbol) [0x00007FF7724C5D2A]
-	(No symbol) [0x00007FF77249836E]
-	(No symbol) [0x00007FF7724DF70C]
-	(No symbol) [0x00007FF7724C5B03]
-	(No symbol) [0x00007FF7724973B8]
-	(No symbol) [0x00007FF77249638E]
-	(No symbol) [0x00007FF772497AE4]
-	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7726FFC58+119032]
-	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7726ED316+42934]
-	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7726F052C+55756]
-	(No symbol) [0x00007FF772567923]
-	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7727B82BA+874330]
-	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7727BD3B4+895060]
-	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7727BD50C+895404]
-	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7727C662E+932558]
-	BaseThreadInitThunk [0x00007FFB9ED27614+20]
-	RtlUserThreadStart [0x00007FFBA06026A1+33]
-</status>
+<status status="PASS" starttime="20230112 17:11:57.601" endtime="20230112 17:12:01.098"/>
 </test>
-<status status="FAIL" starttime="20230112 17:07:19.901" endtime="20230112 17:07:23.108"/>
+<status status="PASS" starttime="20230112 17:11:57.369" endtime="20230112 17:12:01.101"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="Konia Testes">Konia Testes</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Konia Testes">Konia Testes</stat>
 </suite>
 </statistics>
 <errors>
