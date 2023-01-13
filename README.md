@@ -12,3 +12,4 @@ Dado que o usuário esteja na página home page da Konia.com.br
 Quando ele clicar no menu "Blog"
 E pesquisar por "JMeter" no campo de busca
 Então deverá ser exibido na tela artigos referentes ao tema buscado 
+
