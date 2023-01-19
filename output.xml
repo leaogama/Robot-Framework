@@ -1,83 +1,190 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.11.1 on win32)" generated="20230119 10:35:02.973" rpa="false" schemaversion="3">
+<robot generator="Robot 6.0.2 (Python 3.11.1 on win32)" generated="20230119 11:53:30.268" rpa="false" schemaversion="3">
 <suite id="s1" name="Konia Testes" source="C:\_git\Robot-Framework\konia_testes.robot">
 <test id="s1-t1" name="Caso de Teste 01 - Acesso ao menu &quot;Quem Somos&quot;" line="7">
 <kw name="Abrir o navegador" library="konia_resources" type="SETUP">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>browser=edge</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230119 10:35:03.218" level="INFO">Opening browser 'edge' to base url 'None'.</msg>
-<status status="PASS" starttime="20230119 10:35:03.218" endtime="20230119 10:35:04.425"/>
+<msg timestamp="20230119 11:53:30.625" level="INFO">Opening browser 'edge' to base url 'None'.</msg>
+<status status="PASS" starttime="20230119 11:53:30.625" endtime="20230119 11:53:36.622"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230119 10:35:04.425" endtime="20230119 10:35:04.548"/>
+<status status="PASS" starttime="20230119 11:53:36.623" endtime="20230119 11:53:36.782"/>
 </kw>
-<status status="PASS" starttime="20230119 10:35:03.217" endtime="20230119 10:35:04.548"/>
+<status status="PASS" starttime="20230119 11:53:30.624" endtime="20230119 11:53:36.782"/>
 </kw>
 <kw name="Dado que o usuário esteja na página home page da Konia.com.br" library="konia_resources">
 <kw name="Go To" library="SeleniumLibrary">
 <arg>url=${URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20230119 10:35:04.550" level="INFO">Opening url 'https://konia.com.br'</msg>
-<status status="PASS" starttime="20230119 10:35:04.549" endtime="20230119 10:35:06.369"/>
+<msg timestamp="20230119 11:53:36.787" level="INFO">Opening url 'https://konia.com.br'</msg>
+<status status="PASS" starttime="20230119 11:53:36.787" endtime="20230119 11:53:39.161"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
-<arg>5s</arg>
+<arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230119 10:35:11.371" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20230119 10:35:06.370" endtime="20230119 10:35:11.371"/>
+<msg timestamp="20230119 11:53:42.161" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230119 11:53:39.161" endtime="20230119 11:53:42.161"/>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20230119 10:35:11.762" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20230119 10:35:11.371" endtime="20230119 10:35:11.762"/>
+<msg timestamp="20230119 11:53:42.501" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230119 11:53:42.161" endtime="20230119 11:53:42.501"/>
 </kw>
-<status status="PASS" starttime="20230119 10:35:04.549" endtime="20230119 10:35:11.763"/>
+<status status="PASS" starttime="20230119 11:53:36.786" endtime="20230119 11:53:42.501"/>
 </kw>
 <kw name="Quando ele clicar no menu &quot;quem Somos&quot;" library="konia_resources">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>locator=${MENU_QUEM_SOMOS}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230119 10:35:11.765" level="INFO">Clicking element '(//a[@href='https://konia.com.br/quem-somos/'][contains(.,'Quem Somos')])[1]'.</msg>
-<status status="PASS" starttime="20230119 10:35:11.764" endtime="20230119 10:35:12.675"/>
+<msg timestamp="20230119 11:53:42.504" level="INFO">Clicking element '(//a[@href='https://konia.com.br/quem-somos/'][contains(.,'Quem Somos')])[1]'.</msg>
+<status status="PASS" starttime="20230119 11:53:42.502" endtime="20230119 11:53:43.532"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
-<arg>5s</arg>
+<arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230119 10:35:17.676" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20230119 10:35:12.675" endtime="20230119 10:35:17.676"/>
+<msg timestamp="20230119 11:53:46.533" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230119 11:53:43.532" endtime="20230119 11:53:46.533"/>
 </kw>
-<status status="PASS" starttime="20230119 10:35:11.763" endtime="20230119 10:35:17.676"/>
+<status status="PASS" starttime="20230119 11:53:42.502" endtime="20230119 11:53:46.533"/>
 </kw>
 <kw name="Então o título da página deverá ser &quot;Quem Somos » Konia Consultoria e Informática&quot;" library="konia_resources">
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>text=${TITLE_QUEM_SOMOS}</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20230119 10:35:17.677" endtime="20230119 10:35:17.694"/>
+<status status="PASS" starttime="20230119 11:53:46.534" endtime="20230119 11:53:46.553"/>
 </kw>
-<status status="PASS" starttime="20230119 10:35:17.677" endtime="20230119 10:35:17.694"/>
+<status status="PASS" starttime="20230119 11:53:46.534" endtime="20230119 11:53:46.553"/>
 </kw>
 <kw name="Fechar o navegador" library="konia_resources" type="TEARDOWN">
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20230119 10:35:17.908" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20230119 10:35:17.695" endtime="20230119 10:35:17.908"/>
+<msg timestamp="20230119 11:53:46.788" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230119 11:53:46.555" endtime="20230119 11:53:46.789"/>
 </kw>
-<status status="PASS" starttime="20230119 10:35:17.695" endtime="20230119 10:35:17.908"/>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230119 11:53:46.789" endtime="20230119 11:53:49.096"/>
 </kw>
-<status status="PASS" starttime="20230119 10:35:03.216" endtime="20230119 10:35:17.909"/>
+<status status="PASS" starttime="20230119 11:53:46.554" endtime="20230119 11:53:49.096"/>
+</kw>
+<tag>menus</tag>
+<status status="PASS" starttime="20230119 11:53:30.623" endtime="20230119 11:53:49.097"/>
 </test>
-<status status="PASS" starttime="20230119 10:35:02.975" endtime="20230119 10:35:17.911"/>
+<test id="s1-t2" name="Caso de Teste 02 - Pesquisar sobre o artigo JMeter" line="13">
+<kw name="Abrir o navegador" library="konia_resources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=edge</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230119 11:53:49.100" level="INFO">Opening browser 'edge' to base url 'None'.</msg>
+<status status="PASS" starttime="20230119 11:53:49.100" endtime="20230119 11:53:50.445"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230119 11:53:50.446" endtime="20230119 11:53:50.575"/>
+</kw>
+<status status="PASS" starttime="20230119 11:53:49.100" endtime="20230119 11:53:50.576"/>
+</kw>
+<kw name="Dado que o usuário esteja na página home page da Konia.com.br" library="konia_resources">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20230119 11:53:50.577" level="INFO">Opening url 'https://konia.com.br'</msg>
+<status status="PASS" starttime="20230119 11:53:50.577" endtime="20230119 11:53:52.438"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230119 11:53:55.438" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230119 11:53:52.438" endtime="20230119 11:53:55.438"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230119 11:53:55.789" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-10.png"&gt;&lt;img src="selenium-screenshot-10.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230119 11:53:55.438" endtime="20230119 11:53:55.789"/>
+</kw>
+<status status="PASS" starttime="20230119 11:53:50.576" endtime="20230119 11:53:55.789"/>
+</kw>
+<kw name="Quando ele clicar no menu &quot;Blog&quot;" library="konia_resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=${MENU_BLOG}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230119 11:53:55.791" level="INFO">Clicking element 'menu-item-218'.</msg>
+<status status="PASS" starttime="20230119 11:53:55.790" endtime="20230119 11:53:56.702"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230119 11:53:59.704" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230119 11:53:56.702" endtime="20230119 11:53:59.704"/>
+</kw>
+<status status="PASS" starttime="20230119 11:53:55.790" endtime="20230119 11:53:59.704"/>
+</kw>
+<kw name="E pesquisar por &quot;JMeter&quot; no campo de busca" library="konia_resources" sourcename="E pesquisar por &quot;${PESQUISA}&quot; no campo de busca">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>locator=${BLOG_INPUT_PESQUISAR}</arg>
+<arg>text=${PESQUISA}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230119 11:53:59.706" level="INFO">Typing text 'JMeter' into text field '//input[@type='search'][contains(@id,'input-1')]'.</msg>
+<status status="PASS" starttime="20230119 11:53:59.705" endtime="20230119 11:53:59.820"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=${BLOG_BOTAO_PESQUISAR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230119 11:53:59.821" level="INFO">Clicking element '//button[@type='submit'][contains(.,'Pesquisar')]'.</msg>
+<status status="PASS" starttime="20230119 11:53:59.821" endtime="20230119 11:54:01.762"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230119 11:54:04.762" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230119 11:54:01.762" endtime="20230119 11:54:04.762"/>
+</kw>
+<status status="PASS" starttime="20230119 11:53:59.705" endtime="20230119 11:54:04.762"/>
+</kw>
+<kw name="Então deverá ser exibido na tela a lista de artigos referentes ao tema buscado" library="konia_resources">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>locator=${VALIDACAO_ARTIGO}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230119 11:54:04.763" endtime="20230119 11:54:04.780"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230119 11:54:07.782" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230119 11:54:04.781" endtime="20230119 11:54:07.782"/>
+</kw>
+<status status="PASS" starttime="20230119 11:54:04.763" endtime="20230119 11:54:07.782"/>
+</kw>
+<kw name="Fechar o navegador" library="konia_resources" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230119 11:54:08.170" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-11.png"&gt;&lt;img src="selenium-screenshot-11.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230119 11:54:07.783" endtime="20230119 11:54:08.170"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230119 11:54:08.170" endtime="20230119 11:54:10.468"/>
+</kw>
+<status status="PASS" starttime="20230119 11:54:07.783" endtime="20230119 11:54:10.468"/>
+</kw>
+<tag>busca_artigos</tag>
+<status status="PASS" starttime="20230119 11:53:49.099" endtime="20230119 11:54:10.469"/>
+</test>
+<status status="PASS" starttime="20230119 11:53:30.270" endtime="20230119 11:54:10.471"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
+<stat pass="1" fail="0" skip="0">busca_artigos</stat>
+<stat pass="1" fail="0" skip="0">menus</stat>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Konia Testes">Konia Testes</stat>
+<stat pass="2" fail="0" skip="0" id="s1" name="Konia Testes">Konia Testes</stat>
 </suite>
 </statistics>
 <errors>
